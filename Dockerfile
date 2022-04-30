@@ -1,5 +1,5 @@
 # Start with a base image containing Java runtime
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8
 
 # Make port  available to the world outside this container
 EXPOSE 9092
