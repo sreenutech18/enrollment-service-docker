@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.keybank</groupId>
-	<artifactId>enrollment-service</artifactId>
+	<artifactId>enrollment-service-docker</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>enrollment-service</name>
+	<name>enrollment-service-docker</name>
 	<description>This project will do enrollment operation</description>
 	<properties>
 		<java.version>1.8</java.version>
