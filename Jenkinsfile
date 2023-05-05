@@ -1,28 +1,37 @@
-pipeline {
-	agent any
+pipeline{
 
-	environment {
-		mavenHome = tool 'jenkins-maven'
-	}
+agent none
 
-	stages {
+stages{
 
-		stage('Build'){
-			steps {
-				bat "mvn clean install -DskipTests"
-			}
-		}
-
-		stage('Test'){
-			steps{
-				bat "mvn test"
-			}
-		}
-
-		stage('Deploy') {
-			steps {
-			    bat "mvn jar:jar deploy:deploy"
-			}
+	stage('build')
+	{
+		steps{
+		
+			echo "this is buld stage"
+		
 		}
 	}
+	
+	stage('test')
+	{
+		steps{
+		
+			echo "this is test stage"
+		
+		}
+	}
+	
+	stage('deploy')
+	{
+		steps{
+		
+			echo "this is deploy stage"
+		
+		}
+	}
+
+}
+
+
 }
